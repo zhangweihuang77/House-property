@@ -1,0 +1,186 @@
+.pic{
+	position: relative;
+	width:960px;
+	margin:0 auto;
+	img{
+		display: block;
+		width:100%;
+	}
+}
+
+.ewm{
+	position: absolute;
+}
+
+.ewm-lf{
+	top:0;
+	left:-170px;
+}
+
+.ewm-rt{
+	top:0;
+	right:-170px;
+	ul{
+		position: absolute;
+		top:230px;
+		left:0;
+		right:0;
+		margin:0 auto;
+		width:130px;
+		text-align: center;
+		li{
+			margin-top:10px;
+			input{
+				padding:4px 0;
+				width:100%;
+				border:1px #d42317 solid;
+				font-size: 1.4rem;
+			}
+			input[type="text"]{
+				text-indent: 7px;
+			}
+			button{
+				width:100%;
+				border:1px #d42317 solid;
+				padding:4px 0;
+				background: #d42317;
+				color:#fff;
+				font-size: 1.4rem;
+			}
+		}
+	}
+}
+
+.sign{
+	display: none;
+}
+
+.mask{
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	.box-correct,.box-error{
+		position: absolute;
+		top:30%;
+		left:0;
+		right:0;
+		margin:0 auto;
+		padding:20px 0;
+		width:250px;
+		text-align: center;
+		background: #fff;
+		.icon{
+			img{
+				width:48px;
+				height:48px;
+			}
+		}
+		p{
+			font-size: 2rem;
+		}
+		em{
+			font-size:1.2rem;
+		}
+		.btn{
+			padding:25px 0 0 0;
+			span{
+				display: inline-block;
+				padding:7px 15px;
+				background:#0095d9;
+				font-size: 1.6rem;
+				color:#fff;
+				cursor: pointer;
+				border-radius: 5px;
+			}
+		}
+	}
+	.box-correct{
+		display: none;
+	}
+	.box-error{
+		display: none;
+	}
+}
+
+.tels{
+	display: none;
+}
+
+
+@media only screen and(max-width:768px){
+	.pic{
+		width:auto;
+		margin-bottom: 60px;
+	}
+	.ewm{
+		// display: none;
+		img{
+			display: none;
+		}
+	}
+	.sign{
+		display:box;
+		display: -webkit-box;
+		position: fixed;
+		bottom: 0;
+		width:100%;
+		padding:10px 0;
+		background: rgba(0,0,0,0.9);
+		.sign-left{
+			box-flex:6.0;
+			-webkit-box-flex:6.0;
+			padding:0 10px;
+			ul{
+				li{
+					input{
+						border:none;
+						text-align: center;
+						width:100%;
+						padding:4px 0;
+						border-radius: 5px;
+						font-size: 1.6rem;
+					}
+				}
+				li:nth-child(1){
+					margin-bottom:6px;
+				}
+			}
+		}
+		.sign-right{
+			box-flex:4.0;
+			-webkit-box-flex:4.0;
+			padding:0 10px 0 0;
+			span{
+				display: block;
+				color:#fff;
+				height:100%;
+				width:100%;
+				font-size: 1.6rem;
+				padding:20px 0;
+				background: #0464e6;
+				text-align: center;
+				border-radius: 10px;
+			}
+		}
+	}
+	.mask{
+		.box-correct,.box-error{
+			top:25%;
+		}
+	}
+	.tels{
+		display: block;
+		position: fixed;
+		right:0;
+		top:30%;
+		width:9%;
+		img{
+			width:100%;
+		}
+	}
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>保利·叁仟栋</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css"></head>
+<body>
+
+	<!-- PC端元素 -->
+	<div class="pic">
+		<picture>
+			<source srcset="img/bg_min_01.jpg" media="(max-width:768px)">
+			<img src="img/bg_01.jpg"/>
+		</picture>
+		<picture>
+			<source srcset="img/bg_min_02.jpg" media="(max-width:768px)">
+			<img src="img/bg_02.jpg"/>
+		</picture>
+		<picture>
+			<source srcset="img/bg_min_03.jpg" media="(max-width:768px)">
+			<img src="img/bg_03.jpg"/>
+		</picture>
+		<picture>
+			<source srcset="img/bg_min_04.jpg" media="(max-width:768px)">
+			<img src="img/bg_04.jpg"/>
+		</picture>
+		<picture>
+			<source srcset="img/bg_min_05.jpg" media="(max-width:768px)">
+			<img src="img/bg_05.jpg"/>
+		</picture>
+		<picture>
+			<source srcset="img/bg_min_06.jpg" media="(max-width:768px)">
+			<img src="img/bg_06.jpg"/>
+		</picture>
+		<picture>
+			<source srcset="img/bg_min_07.jpg" media="(max-width:768px)">
+			<img src="img/bg_07.jpg"/>
+		</picture>
+		<div class="ewmResize"></div>
+<!-- 		<div class="ewm ewm-lf">
+			<img src="img/ewm-left.png" height="484" width="160"/>
+		</div> -->
+<!-- 		<div class="ewm ewm-rt">
+			<img src="img/ewm-right.png" height="484" width="155">
+			<ul>
+				<li><input class="name" type="text" maxlength="11" placeholder="姓名"/></li>
+				<li><input class="tel" type="text" maxlength="11" placeholder="电话"/></li>
+				<li><button>预约报名</button></li>
+			</ul>
+		</div> -->
+	</div>
+
+
+	<!-- 移动端元素 -->
+	<div class="sign">
+		<div class="sign-left">
+			<ul>
+				<li><input class="name" type="text" maxlength="11" placeholder="姓名"/></li>
+				<li><input class="tel" type="text" maxlength="11" placeholder="电话"/></li>
+			</ul>
+		</div>
+		<div class="sign-right">
+			<span>预约报名</span>
+		</div>
+	</div>
+
+	<div class="mask">
+		<div class="box-correct">
+			<div class="icon"><img src="img/icon-correct.png"/></div>
+			<p>提交成功!</p>
+			<div class="btn"><span>确认</span></div>
+		</div>
+		<div class="box-error">
+			<div class="icon"><img src="img/icon-error.png"/></div>
+			<p>输入错误!</p>
+			<em></em>
+			<div class="btn"><span>确认</span></div>
+		</div>
+	</div>
+
+	<a class="tels" href="tel:0592-6067788"><img src="img/tel.png" alt="电话"></a>
+
+	<script type="text/javascript" src="js/vendor/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".btn span").click(function(){
+				$(this).parent().parent().hide();
+				$(".mask").hide();
+			})
+		})
+	</script>
+</body>
+</html>
